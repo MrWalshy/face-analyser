@@ -1,12 +1,19 @@
 # Notes
-- Local conda env face-detection holds scikit files and opencv + dependencies
-- Should take any picture of a face/s
+- Local conda env face-detection holds scikit files and opencv + dependencies.
+- Should take any picture of a face/s.
 - Makes use of the Viola-Jones Object Detection algorithm, this essentially makes passes over sub-images of an image deciding if they are a face or not(can also be used with other features).The description of the face is held in an xml file, the style is also known as a cascade(think cascade of information).
 
+# Downloading opencv
+- The easiest method is through 'pip'. Make sure to be in a virtual environment before installing to protect the main environment.
+- Ensure any prior installations of opencv are removed/uninstalled.
+- Install the 'opencv-python' package(see resources below for pypi link):
+
+        pip install opencv-python
+
 # How to run?
-- Use venv or conda for the virtual environment
-- Ensure scikit-learn and scikit-image are installed in a virtual environment
-- Set up correct face-detection env, fullfill dependencies for opencv
+- Use venv or conda for the virtual environment.
+- Ensure scikit-learn and scikit-image are installed in a virtual environment.
+- Set up correct face-detection env, fullfill dependencies for opencv.
 - Run the following in the terminal:
 
         conda activate face-detection
